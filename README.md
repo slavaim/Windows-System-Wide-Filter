@@ -2,7 +2,7 @@
 
   This is a set of Windows drivers that were developed to filter all input-output in the system including file system access filtering. The drivers are WDM drivers with some hooking techniques.  
   
-  This project was developed in 2006-2007 and was never completed. The drivers were tested but some functionality is missing. The project is closed and will not be supported.  
+  I developed this project in 2006-2007. The drivers were tested but some functionality is missing. The project is closed and will not be supported.  
   
   You can use the code and compiled driver for educational purposses. The commercial usage or code/binary distribution is not allowed.  
   
