@@ -1,0 +1,34 @@
+TARGETNAME=ochooker
+TARGETTYPE=DRIVER
+TARGET_DESTINATION=debug
+
+MSC_WARNING_LEVEL= /W3 /WX
+
+!if $(AMD64)
+TARGETLIBS= $(TARGETLIBS) ..\..\lib\amd64\wthread.lib
+TARGETLIBS = $(TARGETLIBS) ..\..\lib\amd64\object.lib
+TARGETLIBS = $(TARGETLIBS) ..\..\lib\amd64\hash.lib
+C_DEFINES=$(C_DEFINES) /D_AMD64_
+!else
+TARGETLIBS= $(TARGETLIBS) ..\..\lib\i386\wthread.lib
+TARGETLIBS = $(TARGETLIBS) ..\..\lib\i386\object.lib
+TARGETLIBS = $(TARGETLIBS) ..\..\lib\i386\hash.lib
+!endif
+
+TARGETLIBS = $(TARGETLIBS) $(DDK_LIB_PATH)\wdmsec.lib
+
+SOURCES= init.c          \
+         common.c        \
+         driverhooker.c
+         
+INCLUDES=$(INCLUDES); ..\..\include
+
+
+C_DEFINES=$(C_DEFINES) /DINITGUID
+
+!if $(FREEBUILD)
+C_DEFINES=$(C_DEFINES)
+!else
+C_DEFINES=$(C_DEFINES) /DDBG /DUSE_STD_ALLOCATOR=1
+!endif
+
