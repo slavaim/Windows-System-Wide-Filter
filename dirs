@@ -1,5 +1,4 @@
 DIRS= common \
       o_hooker \
       o_filter \
-      o_core \
-      PnPEmulator
+      o_core
