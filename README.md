@@ -6,4 +6,8 @@
   
   You can use the code and compiled drivers for educational purposses. The commercial usage or code/binary distribution is not allowed.  
   
-  You can contact the author via his blog http://modpager.blogspot.com.au or facebook https://www.facebook.com/profile.php?id=100010119092130 or linkedin https://www.linkedin.com/profile/view?id=6575657
+  You can contact the author via his blog http://modpager.blogspot.com.au or facebook https://www.facebook.com/profile.php?id=100010119092130 or linkedin https://www.linkedin.com/profile/view?id=6575657  
+  
+Slava Imameev
+Sydney
+September 2015 
