@@ -1,3 +1,8 @@
+/*
+Copyright(c) 2008 Alexandr Shevchenko
+*/
+
+
 #include "dbobject.h"
 
 
