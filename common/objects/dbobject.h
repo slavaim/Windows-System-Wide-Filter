@@ -1,3 +1,7 @@
+/*
+Copyright(c) 2008 Alexandr Shevchenko
+*/
+
 #ifndef _DBOBJECT_H_
 #define _DBOBJECT_H_
 
